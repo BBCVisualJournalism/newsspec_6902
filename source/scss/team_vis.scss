@@ -1,0 +1,424 @@
+$youKeyColour: #d2783a;
+$expertKeyColour: #87B64d;
+$chartsGreyColor: #cdcdcd;
+$baseFontColour: #404040;
+@mixin box-sizing() {
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@mixin content-width-transition() {
+	-webkit-transition: width 1.5s ease-out;
+	-moz-transition: width 1.5s ease-out;
+	-o-transition: width 1.5s ease-out;
+	-ms-transition: width 1.5s ease-out;
+	transition: width 1.5s ease-out;
+}
+
+@mixin content-left-transition() {
+	-webkit-transition: left 0.6s ease-out;
+	-moz-transition: left 0.6s ease-out;
+	-o-transition: left 0.6s ease-out;
+	-ms-transition: left 0.6s ease-out;
+	transition: left 0.6s ease-out;
+}
+
+.teamVis {
+
+	font-family: Helmet,Freesans,Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	color: $baseFontColour;
+
+	h1 {
+		line-height: 1.25em;
+		font: bold 22px Arial, sans-serif;
+	}
+
+	p {
+		line-height: 1.25em;
+	}
+
+	.teamVisCompareSpan {
+		display: inline-block;
+	}
+
+	.teamVisSelectExpert {
+		font-size: 1em;
+		display: inline-block;
+		padding-left:10px;
+		vertical-align: middle;
+	}
+
+	.orangeHighlightSpan {
+		color: $youKeyColour;
+		font-weight: bold;
+		font-size: 31px;
+	}
+
+	.blackHighlightSpan {
+		color: $baseFontColour;
+		font-weight: bold;
+		font-size: 31px;
+	}
+
+	.teamVisProfileChartHolder {
+		display: inline-block;
+		width: 100%;
+		padding:0;
+		margin:0;
+		vertical-align: top;
+
+		.teamVisChartContainer {
+			width: 100%;
+			overflow: hidden;
+
+			.teamVisProfileChartCollumn {
+				position: relative;
+				width: 100%;
+				@include box-sizing();
+				padding: 0 50px 5px 150px;
+
+				.teamVisProfileBarHoler {
+					width: 100%;
+					height: 100px;
+					background-color: #333;
+				}
+
+				ul {
+					width: 110%;
+					padding:0;
+					margin: 0 0 0 -5%;
+					li {
+						text-decoration: none;
+						text-align: center;
+						list-style: none;
+
+						width: 9.09%;
+						display: inline-block;
+
+						p {
+							width: 100%;
+							text-align: center;
+							margin: 0;
+							font-size: 0.8em;
+							color: $chartsGreyColor;
+						}
+
+						.teamVisChartNumKeyLine {
+							width:50%;
+							height:5px;
+							border-right: 1px solid $chartsGreyColor;
+							margin-bottom: 2px;
+						}
+					}
+				}
+
+				.teamVisProfileBarBg {
+					position: relative;
+					width: 100%;
+					height: 25px;
+					background-color: $chartsGreyColor;
+
+					.teamVisProfileBar {
+						position: absolute;
+						top: 0;
+						left: 0;
+						height: 100%;
+						background-color: $youKeyColour;
+					}
+				}
+
+				.teamVisProfileType {
+					position: absolute;
+					top:0;
+					left:0;
+					width: 140px;
+					margin: 0;
+				}
+
+				.teamVisBarVal {
+					position: absolute;
+					top:0;
+					right:5px;
+					width: 40px;
+					margin: 0;
+					text-align: right;
+					color: $youKeyColour;
+				}
+
+				.teamVisExpertTri {
+					width: 0;
+					height: 0;
+					border-left: 7px solid transparent;
+					border-right: 7px solid transparent;
+					border-bottom: 12px solid $expertKeyColour;
+					margin-left: -6px;
+					position:relative;
+					left: 0;
+				}
+				.teamVisExpertVal {
+					position: relative;
+					left: 0;
+					margin-left: -3px;
+					color: $expertKeyColour;
+					font-size: 0.8em;
+				}
+			}
+
+			.teamVisProfileLinesPadding {
+				padding-bottom: 24px;
+			}
+		}
+	}
+
+	.teamVisGoalsChartHolder {
+		display: inline-block;
+		width: 100%;
+		padding:0;
+		margin:0;
+		vertical-align: top;
+
+		.teamVisGoalsKeyHolderRelative {
+			position: relative;
+
+			.teamVisGoalsKeyHolderAbsolute {
+				position: absolute;
+				top:0;
+				left:0;
+				width:80%;
+			}
+		}
+
+		.teamVisGoalsChartContainer {
+			width: 100%;
+			height:300px;
+			@include box-sizing();
+			padding: 0 10px;
+
+			.teamVisGoalLinesHolder {
+				position: relative;
+				width: 100%;
+				height: 100%;
+
+				.teamVizGoalChartLine {
+					position: absolute;
+					bottom:0;
+					width: 2px;
+					background-color:$chartsGreyColor;
+				}
+
+				.teamVizExpertGoalChartLine {
+					position: absolute;
+					bottom:0;
+					width: 2px;
+					background-color:$expertKeyColour;
+					padding-left:1px;
+					padding-right:1px;
+					margin-left: -1px;
+				}
+
+				.teamVizHighlightYouLine {
+					padding-left:1px;
+					padding-right:1px;
+					background-color:$youKeyColour;
+					margin-left: -1px;
+				}
+			}
+		}
+
+		.teamVizGoalsKeyHolder {
+			p {
+				line-height: 0.8em;
+				margin: 10px 0;
+				padding: 0 10px;
+				color: $chartsGreyColor;
+			}
+
+			.teamVisGoalsKeyArrowLineHolder {
+				width:100%;
+				height: 1px;
+				@include box-sizing();
+				padding: 15px 100px 0 100px;
+
+				.teamVisGoalsKeyArrowLine {
+					width: 100%;
+					height: 1px;
+					background-color:$chartsGreyColor;
+				}
+
+				img {
+					width: 5px;
+					height:5px;
+					position:absolute;
+				}
+			}
+		}
+	}
+
+	.teamViskeyHolder {
+		display: inline-block;
+		margin-right: 20px;
+		p {
+			display: inline-block;
+		}
+	}
+
+	.teamVisKeyYou {
+		background-color: $youKeyColour;
+		width: 12px;
+		height: 12px;
+		margin-right:5px;
+		display: inline-block;
+	}
+
+	.teamVisKeyExpertSquare {
+		background-color: $expertKeyColour;
+		width: 12px;
+		height: 12px;
+		margin-right:5px;
+		display: inline-block;
+	}
+
+	.teamVisKeyExpert {
+		margin-right:5px;
+		display: inline-block;
+
+		width: 0;
+		height: 0;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+
+		border-bottom: 12px solid $expertKeyColour;
+	}
+
+	.teamVisWinnersMedalsHolder {
+		display: inline-block;
+		width: 100%;
+		padding:0;
+		margin:0;
+		vertical-align: top;
+
+		img {
+			display: inline-block;
+			padding: 0 1px;
+			width: 15px;
+			height: auto;
+		}
+	}
+
+	.teamVisFinalsAppearencesHolder {
+		display: inline-block;
+		width: 100%;
+		padding:0;
+		margin:0;
+		vertical-align: top;
+
+		img {
+			display: inline-block;
+			padding: 0 1px;
+			width: 15px;
+			height: auto;
+		}
+	}
+
+	.hideExpertVal {
+		visibility: hidden;
+	}
+
+	.widthTransition {
+		@include content-width-transition();
+	}
+
+	.leftTransition {
+		@include content-left-transition();
+	}
+
+}
+
+@media all and (min-width: 976px) {
+	.teamVis {
+		.teamVisProfileChartHolder {
+			width: 50%;
+			@include box-sizing();
+			padding-right: 10px;
+		}
+		.teamVisGoalsChartHolder {
+			width: 50%;
+			@include box-sizing();
+			padding-left:10px;
+
+			.teamVisGoalLinesHolder {
+				margin-top: 78px;
+			}
+
+			.teamVisGoalsChartContainer {
+				height: 220px;
+			}
+		}
+		.teamVisWinnersMedalsHolder {
+			width: 50%;
+			@include box-sizing();
+			padding-right: 10px;
+		}
+		.teamVisFinalsAppearencesHolder {
+			width: 50%;
+			@include box-sizing();
+			padding-left: 10px;
+		}
+	}
+}
+
+@media all and (max-width: 520px) {
+	.teamVis {
+		.teamVisGoalsChartHolder {
+			.teamVisGoalsChartContainer {
+				height: 220px;
+			}
+			.teamVisGoalsKeyHolderRelative {
+				.teamVisGoalsKeyHolderAbsolute {
+					.teamViskeyHolder {
+						p {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			.teamVisGoalLinesHolder {
+				.teamVizGoalChartLine:nth-child(even):not(.teamVizHighlightYouLine) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 430px) {
+	.teamVis {
+		.teamVisEvenChartNum {
+			visibility: hidden;
+		}
+		.teamVisGoalsChartHolder {
+			.teamVisGoalsChartContainer {
+				height: 150px;
+			}
+			.teamVisGoalsKeyHolderRelative {
+				.teamVisGoalsKeyHolderAbsolute {
+					.teamViskeyHolder {
+						p {
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+html[lang="ar"] .main,
+html[lang="fa"] .main,
+html[lang="ps"] .main,
+html[lang="ur"] .main {
+	.teamVis .teamVisProfileChartHolder .teamVisChartContainer .teamVisProfileChartCollumn {
+		direction: ltr;
+	}
+}

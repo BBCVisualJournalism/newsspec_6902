@@ -1,0 +1,233 @@
+<div class="teamVis" style="display:none">
+	<h1><%= your_team_has %></h1>
+
+	<span class="teamVisCompareSpan"><%= compare_results_with %></span>
+	<div class="fancy-select">
+		<select name="selectExpert" class="teamVisSelectExpert">
+			<option value="0" selected><%= select_expert %></option>
+		</select>
+	</div>
+	<p id="teamVisPlayedInP"></p>
+	<div class="teamVisProfileChartHolder">
+		<p id="teamVisProfileTypeP"></p>
+		
+		<div class="teamViskeyHolder">
+			<div class="teamVisKeyYou"></div>
+			<p><%= you %></p>
+		</div>
+
+		<div class="teamViskeyHolder hideExpertVal">
+			<div class="teamVisKeyExpert"></div>
+			<p class="teamVisExpertName"><%= expert %></p>
+		</div>
+
+		<div class="teamVisChartContainer">
+			<div class="teamVisProfileChartCollumn" style="padding-bottom:0;">
+				<div style="position:relative; width:100%;">
+				<ul>
+				    <li><p>0</p><div class="teamVisChartNumKeyLine"></div></li><li><p class="teamVisEvenChartNum">1</p><div class="teamVisChartNumKeyLine"></div></li><li><p>2</p><div class="teamVisChartNumKeyLine"></div></li><li><p class="teamVisEvenChartNum">3</p><div class="teamVisChartNumKeyLine"></div></li><li><p>4</p><div class="teamVisChartNumKeyLine"></div></li><li><p class="teamVisEvenChartNum">5</p><div class="teamVisChartNumKeyLine"></div></li><li><p>6</p><div class="teamVisChartNumKeyLine"></div></li><li><p class="teamVisEvenChartNum">7</p><div class="teamVisChartNumKeyLine"></div></li><li><p>8</p><div class="teamVisChartNumKeyLine"></div></li><li><p class="teamVisEvenChartNum">9</p><div class="teamVisChartNumKeyLine"></div></li><li><p>10</p><div class="teamVisChartNumKeyLine"></div></li>
+				</ul>
+				</div>
+			</div>
+			<div class="teamVisProfileChartCollumn">
+				<div class="teamVisProfileBarBg">
+					<div class="teamVisProfileBar" id="attackingStrengthBar"></div>
+				</div>
+				<div class="teamVisExpertTri hideExpertVal leftTransition" id="attackingExpertTri"></div>
+				<span class="teamVisExpertVal hideExpertVal leftTransition" id="attackingStrengthExpertVal">4.5</span>
+				<p class="teamVisProfileType"><%= attacking_strength %></p>
+				<p class="teamVisBarVal" id="attackingStrengthVal">0</p>
+			</div>
+			<div class="teamVisProfileChartCollumn">
+				<div class="teamVisProfileBarBg">
+					<div class="teamVisProfileBar" id="defensiveStrengthBar"></div>
+				</div>
+				<div class="teamVisExpertTri hideExpertVal leftTransition" id="defensiveStrengthExpertTri"></div>
+				<span class="teamVisExpertVal hideExpertVal leftTransition" id="defensiveStrengthExpertVal">4.5</span>
+				<p class="teamVisProfileType"><%= defensive_strength %></p>
+				<p class="teamVisBarVal" id="defensiveStrengthVal">0</p>
+			</div>
+			<div class="teamVisProfileChartCollumn">
+				<div class="teamVisProfileBarBg">
+					<div class="teamVisProfileBar" id="disciplineBar"></div>
+				</div>
+				<div class="teamVisExpertTri hideExpertVal leftTransition" id="disciplineExpertTri"></div>
+				<span class="teamVisExpertVal hideExpertVal leftTransition" id="disciplineExpertVal">4.5</span>
+				<p class="teamVisProfileType"><%= discipline %></p>
+				<p class="teamVisBarVal" id="disciplineVal">0</p>
+			</div>
+			<div class="teamVisProfileChartCollumn">
+				<div class="teamVisProfileBarBg">
+					<div class="teamVisProfileBar" id="experienceBar"></div>
+				</div>
+				<div class="teamVisExpertTri hideExpertVal leftTransition" id="experienceExpertTri"></div>
+				<span class="teamVisExpertVal hideExpertVal leftTransition" id="experienceExpertVal">4.5</span>
+				<p class="teamVisProfileType"><%= experience %></p>
+				<p class="teamVisBarVal" id="experienceVal">0</p>
+			</div>
+		</div>
+
+	</div><div class="teamVisGoalsChartHolder">
+		<p id="teamVisWorldCupGoalsP"></p>
+
+		<div class="teamVisGoalsKeyHolderRelative">
+			<div class="teamVisGoalsKeyHolderAbsolute">
+				<div class="teamViskeyHolder">
+					<div class="teamVisKeyYou"></div>
+					<p><%= you %></p><p id="teamVisGoalsYouVal"></p>
+				</div>
+				<div class="teamViskeyHolder hideExpertVal">
+					<div class="teamVisKeyExpertSquare"></div>
+					<p class="teamVisExpertName"><%= expert %></p><p id="teamVisGoalsExpertVal"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="teamVisGoalsChartContainer">
+			<div class="teamVisGoalLinesHolder">
+				<div class="teamVizGoalChartLine" style="left:0%; height:1.282051282051%"></div>
+				<div class="teamVizGoalChartLine" style="left:1.282051282051%; height:2.564102564102%"></div>
+				<div class="teamVizGoalChartLine" style="left:2.564102564102%; height:3.846153846153%"></div>
+				<div class="teamVizGoalChartLine" style="left:3.846153846153%; height:5.128205128204%"></div>
+				<div class="teamVizGoalChartLine" style="left:5.128205128204%; height:6.410256410255%"></div>
+				<div class="teamVizGoalChartLine" style="left:6.410256410255%; height:7.692307692306%"></div>
+				<div class="teamVizGoalChartLine" style="left:7.692307692306%; height:8.974358974357%"></div>
+				<div class="teamVizGoalChartLine" style="left:8.974358974357%; height:10.256410256408%"></div>
+				<div class="teamVizGoalChartLine" style="left:10.256410256408%; height:11.538461538459%"></div>
+				<div class="teamVizGoalChartLine" style="left:11.538461538459%; height:12.82051282051%"></div>
+				<div class="teamVizGoalChartLine" style="left:12.82051282051%; height:14.102564102560999%"></div>
+				<div class="teamVizGoalChartLine" style="left:14.102564102560999%; height:15.384615384612%"></div>
+				<div class="teamVizGoalChartLine" style="left:15.384615384612%; height:16.666666666662998%"></div>
+				<div class="teamVizGoalChartLine" style="left:16.666666666662998%; height:17.948717948714%"></div>
+				<div class="teamVizGoalChartLine" style="left:17.948717948714%; height:19.230769230765%"></div>
+				<div class="teamVizGoalChartLine" style="left:19.230769230765%; height:20.512820512816%"></div>
+				<div class="teamVizGoalChartLine" style="left:20.512820512816%; height:21.794871794867%"></div>
+				<div class="teamVizGoalChartLine" style="left:21.794871794867%; height:23.076923076918%"></div>
+				<div class="teamVizGoalChartLine" style="left:23.076923076918%; height:24.358974358969%"></div>
+				<div class="teamVizGoalChartLine" style="left:24.358974358969%; height:25.64102564102%"></div>
+				<div class="teamVizGoalChartLine" style="left:25.64102564102%; height:26.923076923070997%"></div>
+				<div class="teamVizGoalChartLine" style="left:26.923076923070997%; height:28.205128205121998%"></div>
+				<div class="teamVizGoalChartLine" style="left:28.205128205121998%; height:29.487179487172998%"></div>
+				<div class="teamVizGoalChartLine" style="left:29.487179487172998%; height:30.769230769224%"></div>
+				<div class="teamVizGoalChartLine" style="left:30.769230769224%; height:32.051282051274995%"></div>
+				<div class="teamVizGoalChartLine" style="left:32.051282051274995%; height:33.333333333325996%"></div>
+				<div class="teamVizGoalChartLine" style="left:33.333333333325996%; height:34.615384615376996%"></div>
+				<div class="teamVizGoalChartLine" style="left:34.615384615376996%; height:35.897435897428%"></div>
+				<div class="teamVizGoalChartLine" style="left:35.897435897428%; height:37.179487179479%"></div>
+				<div class="teamVizGoalChartLine" style="left:37.179487179479%; height:38.46153846153%"></div>
+				<div class="teamVizGoalChartLine" style="left:38.46153846153%; height:39.743589743581%"></div>
+				<div class="teamVizGoalChartLine" style="left:39.743589743581%; height:41.025641025632%"></div>
+				<div class="teamVizGoalChartLine" style="left:41.025641025632%; height:42.307692307683%"></div>
+				<div class="teamVizGoalChartLine" style="left:42.307692307683%; height:43.589743589734%"></div>
+				<div class="teamVizGoalChartLine" style="left:43.589743589734%; height:44.871794871785%"></div>
+				<div class="teamVizGoalChartLine" style="left:44.871794871785%; height:46.153846153836%"></div>
+				<div class="teamVizGoalChartLine" style="left:46.153846153836%; height:47.435897435887%"></div>
+				<div class="teamVizGoalChartLine" style="left:47.435897435887%; height:48.717948717938%"></div>
+				<div class="teamVizGoalChartLine" style="left:48.717948717938%; height:49.999999999989%"></div>
+				<div class="teamVizGoalChartLine" style="left:49.999999999989%; height:51.28205128204%"></div>
+				<div class="teamVizGoalChartLine" style="left:51.28205128204%; height:52.564102564090994%"></div>
+				<div class="teamVizGoalChartLine" style="left:52.564102564090994%; height:53.846153846141995%"></div>
+				<div class="teamVizGoalChartLine" style="left:53.846153846141995%; height:55.128205128192995%"></div>
+				<div class="teamVizGoalChartLine" style="left:55.128205128192995%; height:56.410256410243996%"></div>
+				<div class="teamVizGoalChartLine" style="left:56.410256410243996%; height:57.692307692294996%"></div>
+				<div class="teamVizGoalChartLine" style="left:57.692307692294996%; height:58.974358974345996%"></div>
+				<div class="teamVizGoalChartLine" style="left:58.974358974345996%; height:60.256410256397%"></div>
+				<div class="teamVizGoalChartLine" style="left:60.256410256397%; height:61.538461538448%"></div>
+				<div class="teamVizGoalChartLine" style="left:61.538461538448%; height:62.820512820499%"></div>
+				<div class="teamVizGoalChartLine" style="left:62.820512820499%; height:64.10256410254999%"></div>
+				<div class="teamVizGoalChartLine" style="left:64.10256410254999%; height:65.38461538460099%"></div>
+				<div class="teamVizGoalChartLine" style="left:65.38461538460099%; height:66.66666666665199%"></div>
+				<div class="teamVizGoalChartLine" style="left:66.66666666665199%; height:67.94871794870299%"></div>
+				<div class="teamVizGoalChartLine" style="left:67.94871794870299%; height:69.23076923075399%"></div>
+				<div class="teamVizGoalChartLine" style="left:69.23076923075399%; height:70.51282051280499%"></div>
+				<div class="teamVizGoalChartLine" style="left:70.51282051280499%; height:71.794871794856%"></div>
+				<div class="teamVizGoalChartLine" style="left:71.794871794856%; height:73.076923076907%"></div>
+				<div class="teamVizGoalChartLine" style="left:73.076923076907%; height:74.358974358958%"></div>
+				<div class="teamVizGoalChartLine" style="left:74.358974358958%; height:75.641025641009%"></div>
+				<div class="teamVizGoalChartLine" style="left:75.641025641009%; height:76.92307692306%"></div>
+				<div class="teamVizGoalChartLine" style="left:76.92307692306%; height:78.205128205111%"></div>
+				<div class="teamVizGoalChartLine" style="left:78.205128205111%; height:79.487179487162%"></div>
+				<div class="teamVizGoalChartLine" style="left:79.487179487162%; height:80.769230769213%"></div>
+				<div class="teamVizGoalChartLine" style="left:80.769230769213%; height:82.051282051264%"></div>
+				<div class="teamVizGoalChartLine" style="left:82.051282051264%; height:83.333333333315%"></div>
+				<div class="teamVizGoalChartLine" style="left:83.333333333315%; height:84.615384615366%"></div>
+				<div class="teamVizGoalChartLine" style="left:84.615384615366%; height:85.897435897417%"></div>
+				<div class="teamVizGoalChartLine" style="left:85.897435897417%; height:87.179487179468%"></div>
+				<div class="teamVizGoalChartLine" style="left:87.179487179468%; height:88.461538461519%"></div>
+				<div class="teamVizGoalChartLine" style="left:88.461538461519%; height:89.74358974357%"></div>
+				<div class="teamVizGoalChartLine" style="left:89.74358974357%; height:91.025641025621%"></div>
+				<div class="teamVizGoalChartLine" style="left:91.025641025621%; height:92.307692307672%"></div>
+				<div class="teamVizGoalChartLine" style="left:92.307692307672%; height:93.589743589723%"></div>
+				<div class="teamVizGoalChartLine" style="left:93.589743589723%; height:94.871794871774%"></div>
+				<div class="teamVizGoalChartLine" style="left:94.871794871774%; height:96.153846153825%"></div>
+				<div class="teamVizGoalChartLine" style="left:96.153846153825%; height:97.435897435876%"></div>
+				<div class="teamVizGoalChartLine" style="left:97.435897435876%; height:98.717948717927%"></div>
+				<div class="teamVizGoalChartLine" style="left:98.717948717927%; height:99.999999999978%"></div>
+				<div class="teamVizGoalChartLine" style="left:100%; height:101.282051282029%"></div>
+				<div class="teamVizExpertGoalChartLine hideExpertVal" style="left:0%; height:0%"></div>
+			</div>
+		</div>
+		<div class="teamVizGoalsKeyHolder">
+			<p style="float:left;"><%= min_goals %></p>
+			<p style="float:right; padding-right:10px;"><%= max_goals %></p>
+			<div class="teamVisGoalsKeyArrowLineHolder">
+				<div style="position:relative; width:100%;">
+					<div class="teamVisGoalsKeyArrowLine"></div>
+					<img src="img/chart_left.png" style="position:absolute; top:-2px; left:0;">
+					<img src="img/chart_right.png" style="position:absolute; top:-2px; right:0;">
+				</div>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+	<div class="teamVisWinnersMedalsHolder">
+		<p id="teamVisWinnersMedalsP"></p>
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+		<img src="img/trophy_bw.png">
+	</div><div class="teamVisFinalsAppearencesHolder">
+		<p id="teamVisFinalsAppearencesP"></p>
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+		<img src="img/medal_bw.png">
+	</div>
+	<p id="teamVisCleanSheetsP"></p>
+</div>

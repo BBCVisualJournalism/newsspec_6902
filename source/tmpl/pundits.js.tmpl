@@ -1,0 +1,22 @@
+define({
+<%
+	for (var i=1;i<6; i++) {
+		node(i);
+	}
+	function node(number) {
+		var n = ("00" + number);
+		if (obj['pundit_' + n + '_name'] !== '') { %>
+		"<%= n %>" : {
+			"name" : "<%= obj['pundit_' + n + '_name'] %>",
+			"filename" : "<%= obj['pundit_' + n + '_img'] %>",
+			"position" : "<%= obj['pundit_' + n + '_position'] %>",
+			"team" : {
+				"description_intro" : "<%= obj['pundit_' + n + '_team_description_intro'] %>",
+				"description" : "<%= obj['pundit_' + n + '_team_description'] %>",
+				"ids" : "<%= obj['pundit_' + n + '_team_ids'] %>"
+			}
+		}
+		<% if (number !== 5) { %> , <% }
+		} %>
+<% }; %>
+})

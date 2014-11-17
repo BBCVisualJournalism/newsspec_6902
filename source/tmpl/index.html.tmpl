@@ -1,0 +1,182 @@
+<%= include('includes/top.tmpl') %>
+
+	<noscript>
+		<style>
+			.main {
+				display:none;
+			}
+		</style>
+		<div class="nojs">
+			<p>Visit this page on a desktop, smartphone or tablet to choose a team from these World Cup greats.</p>
+			<ul>
+				<%
+					for (var i=1;i<111; i++) {
+						node(i);
+					}
+					function node(number) {
+						var n = ("00" + number).slice(-3); %>
+							<li><%= obj['player_' + n + '_name'] %></li>
+				<% }; %>
+			</ul>
+			<p>If you are reading this on a desktop, smartphone or tablet, you need to enable javascript to select your team.</p>
+		</div>
+	</noscript>
+    <div class="main">
+        <div class="top-menu shadow">
+        	<ul class="options">
+	        	<li class="user active"><%= create_team_item %></li>
+	        	<li class="experts"><%= experts_item %></li>
+        	</ul>
+	        <ul class="team-references">
+		        <li class="goalkeeper"><%= position_1 %></li>
+		        <li class="defender"><%= position_2 %></li>
+		        <li class="midfielder"><%= position_3 %></li>
+		        <li class="forward"><%= position_4 %></li>
+	        </ul>
+	        <ul class="user team">
+		        <li class="goalkeeper player" data-position="goalkeeper" data-position-number="1" data-status="empty">
+		        	<div>
+		        		<img src="img/transparent.png">
+		        		<span></span>
+		        		<strong>1</strong>
+		        	</div>
+		        </li>
+		        <li class="defender player" data-position="defender" data-position-number="2" data-status="empty">
+		        	<div>
+		        		<img src="img/transparent.png">
+		        		<span></span>
+		        		<strong>2</strong>
+		        	</div>
+		        </li>
+		        <li class="defender player" data-position="defender" data-position-number="3" data-status="empty">
+		        	<div>
+		        		<img src="img/transparent.png">
+		        		<span></span>
+		        		<strong>3</strong>
+		        	</div>
+		        </li>
+		        <li class="defender player" data-position="defender" data-position-number="4" data-status="empty">
+		        	<div>
+		        		<img src="img/transparent.png">
+		        		<span></span>
+		        		<strong>4</strong>
+		        	</div>
+		        </li>
+		        <li class="defender midfielder player" data-position="defender midfielder" data-position-number="5" data-status="empty">
+		        	<div>
+		        		<img src="img/transparent.png">
+						<span class="diagonal"></span>
+						<strong>5</strong>
+		        	</div>
+		        </li>
+		        <li class="midfielder player" data-position="midfielder" data-position-number="6" data-status="empty">
+		        	<div>
+		        		<img src="img/transparent.png">
+		        		<span></span>
+		        		<strong>6</strong>
+		        	</div>
+		        </li>
+		        <li class="midfielder player" data-position="midfielder" data-position-number="7" data-status="empty">
+		        	<div>
+		        		<img src="img/transparent.png">
+		        		<span></span>
+		        		<strong>7</strong>
+		        	</div>
+		        </li>
+		        <li class="midfielder player" data-position="midfielder" data-position-number="8" data-status="empty">
+		        	<div>
+		        		<img src="img/transparent.png">
+		        		<span></span>
+		        		<strong>8</strong>
+		        	</div>
+		        </li>
+		        <li class="midfielder forward player" data-position="midfielder forward" data-position-number="9" data-status="empty">
+		        	<div>
+		        		<img src="img/transparent.png">
+						<span class="diagonal"></span>
+						<strong>9</strong>
+		        	</div>
+		        </li>
+		        <li class="forward player" data-position="forward" data-position-number="10" data-status="empty">
+		        	<div>
+		        		<img src="img/transparent.png">
+		        		<span></span>
+		        		<strong>10</strong>
+		        	</div>
+		        </li>
+		        <li class="forward player" data-position="forward" data-position-number="11" data-status="empty">
+		        	<div>
+		        		<img src="img/transparent.png">
+		        		<span></span>
+		        		<strong>11</strong>
+		        	</div>
+		        </li>
+	        </ul>
+	        <div class="buttons-wrapper">
+			  <h2>This is your team</h2>
+			  <input type="text" class="url">
+		        <button class="confirm-team button"><%= confirm_team_button %></button>
+				<button class="create-your-team button"><%= create_team_button %></button>
+				<button class="edit-team button"><%= edit_team_button %></button>
+				<div class="share-wrapper">
+					<div class="topShareBtnHolder">
+					<div class="sharePngIcon"></div>
+					<p><%= share %></p></div>
+					<span class="shareOverlay">
+						<p><%= share_this_with %></p>
+						<ul>
+							<li> <a id="facebookShareBtn" href="#" target="_blank" data-window-width="626" data-window-height="236" data-network="facebook" tabindex="1" class="s-b-p-a istats-notrack"> <span> <i aria-hidden="true" class="gelicon gelicon--facebook"></i> </span> <%= facebook_name %>  </a> </li>
+							<li> <a id="twitterShareBtn" href="#" target="_blank" data-window-width="550" data-window-height="420" data-network="twitter" tabindex="2" class="s-b-p-a istats-notrack"> <span> <i aria-hidden="true" class="gelicon gelicon--twitter"></i> </span> <%= twitter_name %>  </a> </li>
+							<li> <a id="emailShareBtn" href="#" target="_blank" class="s-b-p-a istats-notrack"><span><img src="img/email_icon.png" width="23" height="23"></span> <%= email %>  </a> </li>
+						</ul>
+						<a href="#" class="shareOverlayCloseBtn" tabindex="4"></a>
+					</span>
+				</div>
+			</div>
+        </div>
+
+        <div id="sections-wrapper">
+			<%= include('includes/goalkeeper.tmpl') %>
+			<%= include('includes/defenders.tmpl') %>
+			<%= include('includes/midfielders.tmpl') %>
+			<%= include('includes/forwards.tmpl') %>
+		</div>
+
+        <div id="experts-wrapper">
+
+		</div>
+
+		<div id="player-details" data-pid="id" style="display:none;">
+			<div class="close button"><%= close_button %> X</div>
+			<div class="wrapper">
+				<div class="column">
+					<h3 class="player-name"></h3>
+					<h4 class="player-country"></h4>
+					<div class="fancy-select">
+						<select class="position-options">
+
+						</select>
+					</div>
+					<button class="add-position button"><%= add_button %></button>
+					<button class="remove-position button"><%= remove_button %></button>
+
+					<p class="player-description"></p>
+
+				</div>
+				<div class="column numbers">
+					<div class="wrapper">
+						<h3><%= stats_heading %></h3><table class="stats">
+							<tr><td class="icon appearances"><span></span></td><td class="heading"><%= world_cup_appearances_heading %></td><td class="figure"></td></tr>
+							<tr><td class="icon medals"><span></span></td><td class="heading"><%= winners_heading %></td><td class="figure"></td></tr>
+							<tr><td class="icon goals"><span></span></td><td class="heading"><%= world_cup_goals_heading %></td><td class="figure"></td></tr>
+							<tr><td class="icon cards"><span></span></td><td class="heading"><%= cards_heading %></td><td class="figure"></td></tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<%= include('team_vis.tmpl') %>
+    </div>
+
+<%= include('includes/bottom.tmpl') %>

@@ -1,0 +1,10 @@
+define({
+{{#each players_index_raw}}
+"{{this.NUMBER}}" : {
+	"name" : "{{this.FULL_NAME}}",
+	"filename" : "{{this.FILE_NAME}}",
+	"position" : "{{this.POSITION}}"
+}
+{{#unless @last}},{{/unless}}
+{{/each}}
+})

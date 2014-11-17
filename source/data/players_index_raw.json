@@ -1,0 +1,662 @@
+[
+  {
+    "NUMBER": "001",
+    "FULL_NAME": "Gordon Banks",
+    "FILE_NAME": "001_banks",
+    "POSITION": "Goalkeeper"
+  },
+  {
+    "NUMBER": "002",
+    "FULL_NAME": "Gianluigi Buffon",
+    "FILE_NAME": "002_buffon",
+    "POSITION": "Goalkeeper"
+  },
+  {
+    "NUMBER": "003",
+    "FULL_NAME": "Iker Casillas",
+    "FILE_NAME": "003_casillas",
+    "POSITION": "Goalkeeper"
+  },
+  {
+    "NUMBER": "004",
+    "FULL_NAME": "Gilmar",
+    "FILE_NAME": "004_gilmar",
+    "POSITION": "Goalkeeper"
+  },
+  {
+    "NUMBER": "005",
+    "FULL_NAME": "Oliver Kahn",
+    "FILE_NAME": "005_kahn",
+    "POSITION": "Goalkeeper"
+  },
+  {
+    "NUMBER": "006",
+    "FULL_NAME": "Sepp Maier",
+    "FILE_NAME": "006_maier",
+    "POSITION": "Goalkeeper"
+  },
+  {
+    "NUMBER": "007",
+    "FULL_NAME": "Claudio Taffarel",
+    "FILE_NAME": "007_taffarel",
+    "POSITION": "Goalkeeper"
+  },
+  {
+    "NUMBER": "008",
+    "FULL_NAME": "Lev Yashin",
+    "FILE_NAME": "008_yashin",
+    "POSITION": "Goalkeeper"
+  },
+  {
+    "NUMBER": "009",
+    "FULL_NAME": "Walter Zenga",
+    "FILE_NAME": "009_zenga",
+    "POSITION": "Goalkeeper"
+  },
+  {
+    "NUMBER": "010",
+    "FULL_NAME": "Dino Zoff",
+    "FILE_NAME": "010_zoff",
+    "POSITION": "Goalkeeper"
+  },
+  {
+    "NUMBER": "011",
+    "FULL_NAME": "Carlos Alberto",
+    "FILE_NAME": "011_alberto",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "012",
+    "FULL_NAME": "Manuel Amoros",
+    "FILE_NAME": "012_amoros",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "013",
+    "FULL_NAME": "V�ctor Rodr�guez Andrade",
+    "FILE_NAME": "013_andrade",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "014",
+    "FULL_NAME": "Laurent Blanc",
+    "FILE_NAME": "014_blanc",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "015",
+    "FULL_NAME": "Franco Baresi",
+    "FILE_NAME": "015_baresi",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "016",
+    "FULL_NAME": "Franz Beckenbauer",
+    "FILE_NAME": "016_beckenbauer",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "017",
+    "FULL_NAME": "Bellini",
+    "FILE_NAME": "017_bellini",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "018",
+    "FULL_NAME": "Giuseppe Bergomi",
+    "FILE_NAME": "018_bergomi",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "019",
+    "FULL_NAME": "Frank de Boer",
+    "FILE_NAME": "019_boer",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "020",
+    "FULL_NAME": "Paul Breitner",
+    "FILE_NAME": "020_breitner",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "021",
+    "FULL_NAME": "Andreas Brehme",
+    "FILE_NAME": "021_brehme",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "022",
+    "FULL_NAME": "Antonio Cabrini",
+    "FILE_NAME": "022_cabrini",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "023",
+    "FULL_NAME": "Cafu",
+    "FILE_NAME": "023_cafu",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "024",
+    "FULL_NAME": "Fabio Cannavaro",
+    "FILE_NAME": "024_cannavaro",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "025",
+    "FULL_NAME": "Roberto Carlos",
+    "FILE_NAME": "025_carlos",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "026",
+    "FULL_NAME": "George Cohen",
+    "FILE_NAME": "026_cohen",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "027",
+    "FULL_NAME": "Marcel Desailly",
+    "FILE_NAME": "027_desailly",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "028",
+    "FULL_NAME": "Giacinto Facchetti",
+    "FILE_NAME": "028_facchetti",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "029",
+    "FULL_NAME": "Claudio Gentile",
+    "FILE_NAME": "029_gentile",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "030",
+    "FULL_NAME": "Fabio Grosso",
+    "FILE_NAME": "030_grosso",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "031",
+    "FULL_NAME": "Josimar",
+    "FILE_NAME": "031_josimar",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "032",
+    "FULL_NAME": "Ruud Krol",
+    "FILE_NAME": "032_krol",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "033",
+    "FULL_NAME": "Philipp Lahm",
+    "FILE_NAME": "033_lahm",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "034",
+    "FULL_NAME": "Paolo Maldini",
+    "FILE_NAME": "034_maldini",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "035",
+    "FULL_NAME": "Bobby Moore",
+    "FILE_NAME": "035_moore",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "036",
+    "FULL_NAME": "Hong Myung-Bo",
+    "FILE_NAME": "036_bo",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "037",
+    "FULL_NAME": "Erik Nilsson",
+    "FILE_NAME": "037_nilsson",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "038",
+    "FULL_NAME": "Nelinho",
+    "FILE_NAME": "038_nelinho",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "039",
+    "FULL_NAME": "Daniel Passarella",
+    "FILE_NAME": "039_passarella",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "040",
+    "FULL_NAME": "Carles Puyol",
+    "FILE_NAME": "040_puyol",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "041",
+    "FULL_NAME": "Sergio Ramos",
+    "FILE_NAME": "041_ramos",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "042",
+    "FULL_NAME": "Oscar Ruggeri",
+    "FILE_NAME": "042_ruggeri",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "043",
+    "FULL_NAME": "Djalma Santos",
+    "FILE_NAME": "043_dsantos",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "044",
+    "FULL_NAME": "Marcio Santos",
+    "FILE_NAME": "044_msantos",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "045",
+    "FULL_NAME": "N�lton Santos",
+    "FILE_NAME": "045_nsantos",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "046",
+    "FULL_NAME": "Karl-Heinz Schnellinger",
+    "FILE_NAME": "046_schnellinger",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "047",
+    "FULL_NAME": "Gaetano Scirea",
+    "FILE_NAME": "047_scirea",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "048",
+    "FULL_NAME": "Lilian Thuram",
+    "FILE_NAME": "048_thuram",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "049",
+    "FULL_NAME": "Berti Vogts",
+    "FILE_NAME": "049_vogts",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "050",
+    "FULL_NAME": "Gianluca Zambrotta",
+    "FILE_NAME": "050_zambrotta",
+    "POSITION": "Defender"
+  },
+  {
+    "NUMBER": "051",
+    "FULL_NAME": "Osvaldo Ardiles",
+    "FILE_NAME": "051_ardiles",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "052",
+    "FULL_NAME": "Michael Ballack",
+    "FILE_NAME": "052_ballack",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "053",
+    "FULL_NAME": "Zbigniew Boniek",
+    "FILE_NAME": "053_boniek",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "054",
+    "FULL_NAME": "Jorge Burruchaga",
+    "FILE_NAME": "054_burruchaga",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "055",
+    "FULL_NAME": "Bobby Charlton",
+    "FILE_NAME": "055_charlton",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "056",
+    "FULL_NAME": "Didi",
+    "FILE_NAME": "056_didi",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "057",
+    "FULL_NAME": "Dunga",
+    "FILE_NAME": "057_dunga",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "058",
+    "FULL_NAME": "Falcao",
+    "FILE_NAME": "058_falcao",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "059",
+    "FULL_NAME": "Luis Figo",
+    "FILE_NAME": "059_figo",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "060",
+    "FULL_NAME": "Paul Gascoigne",
+    "FILE_NAME": "060_gascoigne",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "061",
+    "FULL_NAME": "Garrincha",
+    "FILE_NAME": "061_garrincha",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "062",
+    "FULL_NAME": "Gennaro Gattuso",
+    "FILE_NAME": "062_gattuso",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "063",
+    "FULL_NAME": "Gerson",
+    "FILE_NAME": "063_gerson",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "064",
+    "FULL_NAME": "Alcides Ghiggia",
+    "FILE_NAME": "064_ghiggia",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "065",
+    "FULL_NAME": "Alain Giresse",
+    "FILE_NAME": "065_giresse",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "066",
+    "FULL_NAME": "Arie Haan",
+    "FILE_NAME": "066_haan",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "067",
+    "FULL_NAME": "Gheorghe Hagi",
+    "FILE_NAME": "067_hagi",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "068",
+    "FULL_NAME": "Andres Iniesta",
+    "FILE_NAME": "068_iniesta",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "069",
+    "FULL_NAME": "Jairzinho",
+    "FILE_NAME": "069_jairzinho",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "070",
+    "FULL_NAME": "Raymond Kopa",
+    "FILE_NAME": "070_kopa",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "071",
+    "FULL_NAME": "Lothar Matthaus",
+    "FILE_NAME": "071_matthaus",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "072",
+    "FULL_NAME": "Thomas Muller",
+    "FILE_NAME": "072_muller",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "073",
+    "FULL_NAME": "Johan Neeskens",
+    "FILE_NAME": "073_neeskens",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "074",
+    "FULL_NAME": "Wolfgang Overath",
+    "FILE_NAME": "074_overath",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "075",
+    "FULL_NAME": "Andrea Pirlo",
+    "FILE_NAME": "075_pirlo",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "076",
+    "FULL_NAME": "Michel Platini",
+    "FILE_NAME": "076_platini",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "077",
+    "FULL_NAME": "Rivaldo",
+    "FILE_NAME": "077_rivaldo",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "078",
+    "FULL_NAME": "Roberto Rivelino",
+    "FILE_NAME": "078_rivelino",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "079",
+    "FULL_NAME": "Gianni Rivera",
+    "FILE_NAME": "079_rivera",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "080",
+    "FULL_NAME": "Cristiano Ronaldo",
+    "FILE_NAME": "080_ronaldo",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "081",
+    "FULL_NAME": "Bastian Schweinsteiger",
+    "FILE_NAME": "081_schweinsteiger",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "082",
+    "FULL_NAME": "Enzo Scifo",
+    "FILE_NAME": "082_scifo",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "083",
+    "FULL_NAME": "Wesley Sneijder",
+    "FILE_NAME": "083_sneijder",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "084",
+    "FULL_NAME": "Socrates",
+    "FILE_NAME": "084_socrates",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "085",
+    "FULL_NAME": "Nobby Stiles",
+    "FILE_NAME": "085_stiles",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "086",
+    "FULL_NAME": "Marco Tardelli",
+    "FILE_NAME": "086_tardelli",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "087",
+    "FULL_NAME": "Xavi",
+    "FILE_NAME": "087_xavi",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "088",
+    "FULL_NAME": "Mario Zagallo",
+    "FILE_NAME": "088_zagallo",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "089",
+    "FULL_NAME": "Zico",
+    "FILE_NAME": "089_zico",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "090",
+    "FULL_NAME": "Zinedine Zidane",
+    "FILE_NAME": "090_zidane",
+    "POSITION": "Midfielder"
+  },
+  {
+    "NUMBER": "091",
+    "FULL_NAME": "Roberto Baggio",
+    "FILE_NAME": "091_baggio",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "092",
+    "FULL_NAME": "Johan Cruyff",
+    "FILE_NAME": "092_cruyff",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "093",
+    "FULL_NAME": "Eusebio",
+    "FILE_NAME": "093_eusebio",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "094",
+    "FULL_NAME": "Just Fontaine",
+    "FILE_NAME": "094_fontaine",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "095",
+    "FULL_NAME": "Geoff Hurst",
+    "FILE_NAME": "095_hurst",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "096",
+    "FULL_NAME": "Mario Kempes",
+    "FILE_NAME": "096_kempes",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "097",
+    "FULL_NAME": "Jurgen Klinsmann",
+    "FILE_NAME": "097_klinsmann",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "098",
+    "FULL_NAME": "Miroslav Klose",
+    "FILE_NAME": "098_klose",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "099",
+    "FULL_NAME": "Gary Lineker",
+    "FILE_NAME": "099_lineker",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "100",
+    "FULL_NAME": "Diego Maradona",
+    "FILE_NAME": "100_maradona",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "101",
+    "FULL_NAME": "Roger Milla",
+    "FILE_NAME": "101_milla",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "102",
+    "FULL_NAME": "Gerd Muller",
+    "FILE_NAME": "102_muller",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "103",
+    "FULL_NAME": "Pele",
+    "FILE_NAME": "103_pele",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "104",
+    "FULL_NAME": "Ferenc Puskas",
+    "FILE_NAME": "104_puskas",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "105",
+    "FULL_NAME": "Romario",
+    "FILE_NAME": "105_romario",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "106",
+    "FULL_NAME": "Ronaldo",
+    "FILE_NAME": "106_ronaldo",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "107",
+    "FULL_NAME": "Paolo Rossi",
+    "FILE_NAME": "107_rossi",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "108",
+    "FULL_NAME": "Karl-Heinz Rummenigge",
+    "FILE_NAME": "108_rummenigge",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "109",
+    "FULL_NAME": "Salvatore Schillaci",
+    "FILE_NAME": "109_schillaci",
+    "POSITION": "Forward"
+  },
+  {
+    "NUMBER": "110",
+    "FULL_NAME": "Uwe Seeler",
+    "FILE_NAME": "110_seeler",
+    "POSITION": "Forward"
+  }
+]

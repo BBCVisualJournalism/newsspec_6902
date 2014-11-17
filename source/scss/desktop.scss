@@ -1,0 +1,216 @@
+.main {
+	max-width: 936px;
+	ul.options {
+		width: 976px;
+		margin-left: -20px;
+	}
+	.team {
+		li {
+			&.player {
+				width: 8.9%;
+				margin: 0 1px 0 0;
+				float: left;
+				img {
+					visibility: visible;
+				}
+				span {
+					&.frame {
+						.position-number {
+							left: 0;
+							bottom: 0;
+						}
+					}
+				}
+				&.goalkeeper {
+						.frame {
+							border: 3px solid #6c4d72;
+							.position-number {
+								background: #6c4d72;
+							}
+						}
+				}
+				&.defender {
+					.frame {
+						border: 3px solid #708f71;
+						.position-number {
+							background: #708f71;
+						}
+					}
+				}
+				&.midfielder {
+					.frame {
+						border: 3px solid #81b3c1;
+						.position-number {
+							background: #81b3c1;
+						}
+					}
+				}
+				&.forward {
+					.frame {
+						border: 3px solid #123f63;
+						.position-number {
+							background: #123f63;
+						}
+					}
+				}
+			}
+		}
+		&.formation {
+			li {
+				&.goalkeeper {
+					.frame {
+						border: 0;
+						border-bottom: 5px solid #6c4d72;
+					}
+				}
+				&.defender {
+					.frame {
+						border: 0;
+						border-bottom: 5px solid #708f71;
+					}
+				}
+				&.midfielder {
+					.frame {
+						border: 0;
+						border-bottom: 5px solid #81b3c1;
+					}
+				}
+				&.forward {
+					.frame {
+						border: 0;
+						border-bottom: 5px solid #123f63;
+					}
+				}
+			}
+		}
+		}
+	.position {
+		.player {
+			max-width: 97px;
+			width: 10%;
+			/*max-height: 100px;
+			height: 9.5%;*/
+			display: block;
+			float: left;
+			cursor: pointer;
+			text-align: center;
+			p {
+				margin-top: -20px;
+			}
+			/*&:before {
+				content: " ";
+				padding-top: 79%;
+				display: block;
+			}*/
+			&.mobile-break {
+				clear: none;
+				&.decimal {
+					clear: both;
+				}
+			}
+		}
+	}
+	#player-details {
+		padding: 16px;
+		background: #fff;
+		width: auto;
+		min-height: initial;
+		height: auto;
+		clear: both;
+		opacity: 1;
+		position: relative;
+		z-index: 0;
+		overflow: hidden;
+		.player-name {
+			font: bold 28px Arial, sans-serif;
+		}
+	}
+	.column {
+		width: 49.7%;
+		float: left;
+		position: relative;
+		&.numbers {
+			padding: 55px 0 16px;
+			h3 {
+				font-weight: bold;
+			}
+			.wrapper {
+				border-left: 1px solid #e3e3e3;
+				padding-left: 32px;
+			}
+		}
+	}
+	.button {
+		float: none;
+		margin: 0;
+	}
+	.confirm-team {
+		margin: 10px 0 20px;
+	}
+	.edit-team {
+		float: right;
+	}
+	/*&.open-modal {
+		padding: 17px 0 18px;
+		div.heading, .player, .top-menu {
+			display: block;
+		}
+		#sections-wrapper {
+			padding-top: 160px;
+		}
+	}*/
+	#sections-wrapper {
+		padding-top: 160px;
+		&.confirm {
+			padding-top: 230px;
+		}
+	}
+	.top-menu {
+		.team-references {
+			display: block;
+		}
+		.buttons-wrapper {
+			input {
+				margin-right: 0;
+				width: 52%;
+			}
+		}
+	}
+	.teamVis {
+		padding-top: 240px;
+		&.shared {
+			padding-top: 170px;
+		}
+	}
+	#experts-wrapper {
+		.description {
+			border-right: 1px solid #e3e3e3;
+		}
+		.column.numbers {
+			padding: 20px 0 0;
+			width: 46%;
+				.wrapper {
+					border: 0;
+				}
+			}
+	}
+}
+html[lang="ar"] .main,
+html[lang="fa"] .main,
+html[lang="ps"] .main,
+html[lang="ur"] .main {
+	.teamVisSelectExpert,
+	.fancy-select select {
+		padding-right: 40px;
+	}
+	.top-menu .buttons-wrapper {
+		direction: ltr;
+		input {
+			text-align: left;
+			direction: ltr;
+		}
+	}
+	.top-menu .team-references {
+		direction: ltr;
+	}
+}

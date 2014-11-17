@@ -1,0 +1,111 @@
+NUMBER,FULL_NAME,FILE_NAME,POSITION
+001,Gordon Banks,001_banks,Goalkeeper
+002,Gianluigi Buffon,002_buffon,Goalkeeper
+003,Iker Casillas,003_casillas,Goalkeeper
+004,Gilmar,004_gilmar,Goalkeeper
+005,Oliver Kahn,005_kahn,Goalkeeper
+006,Sepp Maier,006_maier,Goalkeeper
+007,Claudio Taffarel,007_taffarel,Goalkeeper
+008,Lev Yashin,008_yashin,Goalkeeper
+009,Walter Zenga,009_zenga,Goalkeeper
+010,Dino Zoff,010_zoff,Goalkeeper
+011,Carlos Alberto,011_alberto,Defender
+012,Manuel Amoros,012_amoros,Defender
+013,Víctor Rodríguez Andrade,013_andrade,Defender
+014,Laurent Blanc,014_blanc,Defender
+015,Franco Baresi,015_baresi,Defender
+016,Franz Beckenbauer,016_beckenbauer,Defender
+017,Bellini,017_bellini,Defender
+018,Giuseppe Bergomi,018_bergomi,Defender
+019,Frank de Boer,019_boer,Defender
+020,Paul Breitner,020_breitner,Defender
+021,Andreas Brehme,021_brehme,Defender
+022,Antonio Cabrini,022_cabrini,Defender
+023,Cafu,023_cafu,Defender
+024,Fabio Cannavaro,024_cannavaro,Defender
+025,Roberto Carlos,025_carlos,Defender
+026,George Cohen,026_cohen,Defender
+027,Marcel Desailly,027_desailly,Defender
+028,Giacinto Facchetti,028_facchetti,Defender
+029,Claudio Gentile,029_gentile,Defender
+030,Fabio Grosso,030_grosso,Defender
+031,Josimar,031_josimar,Defender
+032,Ruud Krol,032_krol,Defender
+033,Philipp Lahm,033_lahm,Defender
+034,Paolo Maldini,034_maldini,Defender
+035,Bobby Moore,035_moore,Defender
+036,Hong Myung-Bo,036_bo,Defender
+037,Erik Nilsson,037_nilsson,Defender
+038,Nelinho,038_nelinho,Defender
+039,Daniel Passarella,039_passarella,Defender
+040,Carles Puyol,040_puyol,Defender
+041,Sergio Ramos,041_ramos,Defender
+042,Oscar Ruggeri,042_ruggeri,Defender
+043,Djalma Santos,043_dsantos,Defender
+044,Marcio Santos,044_msantos,Defender
+045,Nílton Santos,045_nsantos,Defender
+046,Karl-Heinz Schnellinger,046_schnellinger,Defender
+047,Gaetano Scirea,047_scirea,Defender
+048,Lilian Thuram,048_thuram,Defender
+049,Berti Vogts,049_vogts,Defender
+050,Gianluca Zambrotta,050_zambrotta,Defender
+051,Osvaldo Ardiles,051_ardiles,Midfielder
+052,Michael Ballack,052_ballack,Midfielder
+053,Zbigniew Boniek,053_boniek,Midfielder
+054,Jorge Burruchaga,054_burruchaga,Midfielder
+055,Bobby Charlton,055_charlton,Midfielder
+056,Didi,056_didi,Midfielder
+057,Dunga,057_dunga,Midfielder
+058,Falcao,058_falcao,Midfielder
+059,Luis Figo,059_figo,Midfielder
+060,Paul Gascoigne,060_gascoigne,Midfielder
+061,Garrincha,061_garrincha,Midfielder
+062,Gennaro Gattuso,062_gattuso,Midfielder
+063,Gerson,063_gerson,Midfielder
+064,Alcides Ghiggia,064_ghiggia,Midfielder
+065,Alain Giresse,065_giresse,Midfielder
+066,Arie Haan,066_haan,Midfielder
+067,Gheorghe Hagi,067_hagi,Midfielder
+068,Andres Iniesta,068_iniesta,Midfielder
+069,Jairzinho,069_jairzinho,Midfielder
+070,Raymond Kopa,070_kopa,Midfielder
+071,Lothar Matthaus,071_matthaus,Midfielder
+072,Thomas Muller,072_muller,Midfielder
+073,Johan Neeskens,073_neeskens,Midfielder
+074,Wolfgang Overath,074_overath,Midfielder
+075,Andrea Pirlo,075_pirlo,Midfielder
+076,Michel Platini,076_platini,Midfielder
+077,Rivaldo,077_rivaldo,Midfielder
+078,Roberto Rivelino,078_rivelino,Midfielder
+079,Gianni Rivera,079_rivera,Midfielder
+080,Cristiano Ronaldo,080_ronaldo,Midfielder
+081,Bastian Schweinsteiger,081_schweinsteiger,Midfielder
+082,Enzo Scifo,082_scifo,Midfielder
+083,Wesley Sneijder,083_sneijder,Midfielder
+084,Socrates,084_socrates,Midfielder
+085,Nobby Stiles,085_stiles,Midfielder
+086,Marco Tardelli,086_tardelli,Midfielder
+087,Xavi,087_xavi,Midfielder
+088,Mario Zagallo,088_zagallo,Midfielder
+089,Zico,089_zico,Midfielder
+090,Zinedine Zidane,090_zidane,Midfielder
+091,Roberto Baggio,091_baggio,Forward
+092,Johan Cruyff,092_cruyff,Forward
+093,Eusebio,093_eusebio,Forward
+094,Just Fontaine,094_fontaine,Forward
+095,Geoff Hurst,095_hurst,Forward
+096,Mario Kempes,096_kempes,Forward
+097,Jurgen Klinsmann,097_klinsmann,Forward
+098,Miroslav Klose,098_klose,Forward
+099,Gary Lineker,099_lineker,Forward
+100,Diego Maradona,100_maradona,Forward
+101,Roger Milla,101_milla,Forward
+102,Gerd Muller,102_muller,Forward
+103,Pele,103_pele,Forward
+104,Ferenc Puskas,104_puskas,Forward
+105,Romario,105_romario,Forward
+106,Ronaldo,106_ronaldo,Forward
+107,Paolo Rossi,107_rossi,Forward
+108,Karl-Heinz Rummenigge,108_rummenigge,Forward
+109,Salvatore Schillaci,109_schillaci,Forward
+110,Uwe Seeler,110_seeler,Forward

@@ -1,0 +1,759 @@
+$anchor-active: #f00;
+
+@import "news_special/defaults";
+
+.main {
+	ul.options {
+		background: #eeeded;
+		padding: 6px 0 0 6px;
+		margin: 0;
+		li {
+			font: bold 16px Arial, sans-serif;
+			color: #4a7194;
+			background: transparent;
+			display: inline-block;
+			padding: 6px 14px;
+			list-style: none;
+			cursor: pointer;
+			&.active {
+				color: #d1700e;
+				background: #fff;
+			}
+			&.experts {
+				display: none;
+			}
+		}
+	}
+	#sections-wrapper {
+		display: none;
+		padding-top: 70px;
+		&.confirm {
+			padding-top: 170px;
+		}
+	}
+	.top-menu {
+		position: fixed;
+		background: #fff;
+		width: 100%;
+		top: 0;
+		z-index: 1005;
+		max-width: 940px;
+		padding-bottom: 12px;
+		.team-references {
+			display: none;
+		}
+		.buttons-wrapper {
+			text-align: center;
+			clear: both;
+			h2 {
+				margin: 10px 0 0 5px;
+				float: left;
+				display: none;
+				color: #404040;
+			}
+			input {
+				font-size: 22px;
+				width: 95%;
+				float: left;
+				margin-top: 10px;
+				margin-left: 5px;
+				margin-right: 100%;
+				clear: both;
+				margin-bottom: 15px;
+				display: none;
+			}
+		}
+		.team-references {
+			margin: 0;
+			padding: 5px;
+			position: relative;
+			height: 12px;
+			li {
+				list-style: none;
+				display: inline-block;
+				position: absolute;
+				cursor: pointer;
+				font-size: 12px;
+				&.goalkeeper {
+					color: #d1d1d1;
+					margin-left: 1%;
+				}
+				&.defender {
+					color: #a5a5a5;
+					margin-left: 24%;
+				}
+				&.midfielder {
+					color: #717171;
+					margin-left: 59%;
+				}
+				&.forward {
+					color: #474747;
+					margin-left: 86%;
+				}
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+		.team {
+			visibility: hidden;
+			margin: 0;
+			padding: 5px;
+			li {
+				&.player {
+					min-width: 25px;
+					min-height: 23px;
+					max-width: 90px;
+					list-style: none;
+					display: block;
+					cursor: pointer;
+					overflow: hidden;
+					text-align: center;
+					color: #fff;
+					font: bold 22px Arial, sans-serif;
+					width: 8.9%;
+					margin: 0 1px 0 0;
+					float: left;
+					position: relative;
+					img {
+						width: 100%;
+						float: left;
+						visibility: hidden;
+					}
+					strong {
+						position: absolute;
+						top: 34%;
+						left: 38%;
+						width: 20px;
+						text-align: center;
+					}
+					span {
+						display: inline-block;
+						position: absolute;
+						text-align: center;
+						&.diagonal {
+							background: url(../img/diagonal-gradient.png) no-repeat 50% 50%;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							left: -1px;
+							width: 100%;
+							height: 100%;
+						}
+						&.frame {
+							padding: 0;
+							position: relative;
+							.position-number {
+								color: #fff;
+								font: bold 18px Arial, sans-serif;
+								position: absolute;
+								left: 17%;
+								bottom: 20%;
+								width: 34px;
+								line-height: 28px;
+								height: 27px;
+							}
+						}
+					}
+					&.goalkeeper {
+						background: #d1d1d1;
+							.frame {
+								background: #6c4d72;
+								color: transparent;
+							}
+					}
+					&.defender {
+						background: #a5a5a5;
+						.frame {
+							background: #708f71;
+							color: transparent;
+						}
+					}
+					&.midfielder {
+						background: #717171;
+						.frame {
+							background: #81b3c1;
+							color: transparent;
+						}
+					}
+					&.forward {
+						background: #474747;
+						.frame {
+							background: #123f63;
+							color: transparent;
+						}
+						.diagonal {
+							background: url(../img/diagonal-gradient2.png) no-repeat 50% 50%;
+						}
+					}
+					/*&:before {
+						content: " ";
+						padding-top: 67%;
+						display: block;
+					}*/
+					&[data-status=full] {
+						background: none;
+						/*&:before {
+							content: "";
+							padding-top: 0;
+							display: none;
+						}*/
+					}
+				}
+			}
+			&.formation {
+				text-align: center;
+				li {
+					overflow: visible;
+					list-style: none;
+					ul {
+						padding: 0;
+						margin: 0 auto;
+						display: inline-block;
+						li {
+							width: 70px;
+							height: 70px;
+							margin: 0;
+							img {
+								width: 100%;
+								visibility: visible;
+							}
+							span.frame .position-number {
+								display: none;
+							}
+						}
+					}
+					&.goalkeeper {
+						img {
+							border-bottom: 5px solid #6c4d72;
+							visibility: visible;
+						}
+					}
+					&.defender {
+						img {
+							border-bottom: 5px solid #708f71;
+						}
+					}
+					&.midfielder {
+						img {
+							border-bottom: 5px solid #81b3c1;
+						}
+					}
+					&.forward {
+						img {
+							border-bottom: 5px solid #123f63;
+						}
+					}
+					&.break {
+						float: none;
+					}
+				}
+			}
+			&.wrapped {
+				li {
+					&.goalkeeper {
+						float: none;
+						margin: 0 auto;
+						width: 70px;
+						height: 75px;
+						.frame {
+							.position-number {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+			&.expert {
+				clear: both;
+				margin: 20px 0 0;
+				li.player.goalkeeper,
+				li.player.defender,
+				li.player.midfielder,
+				li.player.forward {
+					background: none;
+					cursor: auto;
+				}
+			}
+		}
+
+	.position {
+		clear: both;
+		overflow: hidden;
+		padding-bottom: 10px;
+		.group {
+			display: block;
+		}
+		> .heading {
+			padding: 5px;
+			margin: 12px 0 10px 0;
+			clear: both;
+			float: none;
+			position: relative;
+			color: #fff;
+			border-bottom: 1px solid #404040;
+		}
+		h2 {
+			margin: 0;
+			padding: 0;
+			font: bold 22px Arial, sans-serif;
+			color: #404040;
+		}
+		.player {
+			min-width: 56px;
+			width: 19.8%;
+			/*min-height: 46px;
+			height: 18%;*/
+			display: block;
+			float: left;
+			cursor: pointer;
+			text-align: center;
+			position: relative;
+			.frame {
+				/*border: 3px solid #fff;*/
+				float: left;
+				margin: 1px;
+				position: relative;
+				img {
+					width: 100%;
+					float: left;
+				}
+				p {
+					display: none;
+					margin-top: -20px;
+					position: relative;
+					background: #fff;
+					font-size: 12px;
+					text-align: center;
+				}
+				.position-number {
+					background: #ccc;
+					color: #fff;
+					font: bold 23px Arial, sans-serif;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 34px;
+					line-height: 28px;
+					height: 27px;
+				}
+			}
+			/*&:before {
+				content: " ";
+				padding-top: 79%;
+				display: block;
+			}*/
+			/*&:hover {
+				p {
+					display: block;
+				}
+			}*/
+			&.decimal {
+				clear: both;
+			}
+			&.mobile-break {
+				clear: both;
+			}
+		}
+		&.goalkeeper {
+			/*margin-top: 30px;*/
+			.heading {
+				margin-top: 10px;
+			}
+			.player.selected {
+				.frame {
+					border: 3px solid #6c4d72;
+					.position-number {
+						background: #6c4d72;
+					}
+				}
+			}
+		}
+		&.defender {
+			.player.selected {
+				.frame {
+					border: 3px solid #708f71;
+					.position-number {
+						background: #708f71;
+					}
+				}
+			}
+		}
+		&.midfielder {
+			.player.selected {
+				.frame {
+					border: 3px solid #81b3c1;
+					.position-number {
+						background: #81b3c1;
+					}
+				}
+			}
+		}
+		&.forward {
+			.player.selected {
+				.frame {
+					border: 3px solid #123f63;
+					.position-number {
+						background: #123f63;
+					}
+				}
+			}
+		}
+		&.open {
+			.group {
+				display: block;
+				.player {
+					-webkit-transform: translateZ(0);
+					transform: translateZ(0);
+					.frame {
+						img {
+							opacity: .2;
+						}
+					}
+
+					&.highlighted {
+						-webkit-transform: scale(1.1);
+						transform: scale(1.1);
+						z-index: 1002;
+						img {
+							opacity: 1;
+						}
+					}
+					&.selected {
+						z-index: 999;
+						-webkit-transform: scale(1);
+						transform: scale(1);
+						.frame {
+							img {
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#player-details {
+		padding: 16px;
+		background: #fff;
+		min-height: 300px;
+		clear: both;
+		display: none;
+		position: static;
+		opacity: .8;
+		z-index: 2000;
+		width: 95%;
+		color: #404040;
+		top: 10px;
+		overflow: hidden;
+		.player-description {
+			padding-right: 24px;
+			clear: both;
+		}
+		.close {
+			float: right;
+			cursor: pointer;
+			font-size: 14px;
+			padding: 4px 8px;
+		}
+		.remove-position {
+			display: none;
+		}
+		.player-name {
+			font: bold 18px Arial, sans-serif;
+			margin: 0 0 5px;
+		}
+		.player-country {
+			font: 16px Arial, sans-serif;
+			margin: 0 0 5px;
+		}
+	}
+	.stats {
+		.icon {
+			padding: 10px 0 0;
+			span {
+				background: url(../img/icons.png) no-repeat;
+				width: 16px;
+				height: 16px;
+				padding-right: 20px;
+				padding-top: 10px;
+				display: inline-block;
+			}
+			&.tournaments span {
+				background-position: 0 0;
+			}
+			&.medals span {
+				background-position: 0 -51px;
+			}
+			&.appearances span {
+				background-position: 0 -100px;
+			}
+			&.goals span {
+				background-position: 0 -148px;
+			}
+			&.cleansheets span {
+				background-position: 0 -244px;
+			}
+			&.cards span {
+				background-position: 0 -195px;
+			}
+		}
+		.heading {
+			width: 77%;
+		}
+		.figure {
+			font: 28px Arial, sans-serif;
+			color: #d1700e;
+			text-align: right;
+			width: 15%;
+		}
+	}
+	.column {
+		width:100%;
+		float: left;
+		position: relative;
+		&.numbers {
+			padding: 0;
+			.wrapper {
+				border: 0;
+				padding-left: 0;
+			}
+		}
+	}
+	.fancy-select {
+		position: relative;
+		clear: both;
+		margin-top: 8px;
+		margin-bottom: 8px;
+		display: inline-block;
+		select {
+			background: none repeat scroll 0 0 #FFFFFF;
+			cursor: pointer;
+			font-size: 14px;
+			margin: 0;
+			padding: 8px 8px 7px;
+			width: 260px;
+			border: 1px solid #404040;
+			border-radius: 0 0 0 0;
+			display: inline-block;
+			-webkit-appearance: none;
+		}
+		&:after {
+			background: none repeat scroll 0 0 white;
+			border-left: 1px solid #404040;
+			border-top: 1px solid #404040;
+			border-radius: 0 0 0 0;
+			bottom: 1px;
+			color: black;
+			content: url("../img/arrow.png");
+			cursor: pointer;
+			padding: 0 0 0 9px;
+			pointer-events: none;
+			position: absolute;
+			left: 235px;
+			top: 0;
+			line-height: 27px;
+		}
+	}
+	.button {
+		font: bold 18px Arial, sans-serif;
+		background: #ececec;
+		padding: 4px 14px;
+		border: 0;
+		border-bottom: 2px solid #404040;
+		color: #404040;
+		float: right;
+		margin-right: 23px;
+		margin-bottom: 20px
+	}
+	.confirm-team {
+		display: none;
+		margin: 10px 0 10px;
+		background: #d1700e;
+		color: #fff;
+		float: none;
+	}
+	.edit-team {
+		display: none;
+		padding: 8px 12px;
+	}
+	.create-your-team {
+		display: none;
+		margin: 20px 0 0;
+		background-color: #d1700e;
+		color: #fff;
+	}
+	.add-position {
+		background: #d1700e;
+		color: #fff;
+	}
+	.remove-position {
+		background: #d1700e;
+		color: #fff;
+	}
+
+	/*&.open-modal {
+		.top-menu {
+			display: none;
+		}
+	}
+	&.open-modal {
+		padding: 0;
+		div.heading, .player, .top-menu {
+			display: none;
+		}
+		#sections-wrapper {
+			padding-top: 0;
+		}
+	}*/
+	.teamVis {
+		padding-top: 510px;
+		&.shared {
+			padding-top: 400px;
+		}
+	}
+	#experts-wrapper {
+		padding-top: 60px;
+		display: none;
+		.expert-group {
+			clear: both;
+			padding-bottom: 50px;
+			overflow: hidden;
+		}
+		.avatar {
+			float: left;
+			margin: 0 12px 12px 0;
+		}
+		h2 {
+			color: #404040;
+			font: bold 28px Arial, sans-serif;
+			margin: 5px 0;
+			padding-top: 0;
+		}
+		h3 {
+			color: #404040;
+			font: 16px Arial, sans-serif;
+			margin: 0;
+		}
+		.description {
+			clear: both;
+			padding: 0 20px;
+			margin-top: 20px;
+			font-size: 16px;
+			color: #404040;
+			overflow: hidden;
+			p.intro {
+				margin-top: 0;
+			}
+			.more {
+				display: none;
+			}
+		}
+		.column.numbers {
+			padding: 20px 0 20px 32px;
+			width: 100%;
+			.wrapper {
+				border: 0;
+			}
+		}
+		.toggle-pundit {
+			float: right;
+			font-size: 14px;
+			padding: 4px 8px;
+		}
+	}
+	.ns__share {
+		display: none;
+	}
+}
+
+
+.shadow {
+	-moz-box-shadow:    0 5px 5px -2px #ccc;
+	-webkit-box-shadow: 0 5px 5px -2px #ccc;
+	box-shadow:         0 5px 5px -2px #ccc;
+}
+.gradient {
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #000000 0%, #000000 0%, #000000 50%, #ffffff 51%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#000000), color-stop(0%,#000000), color-stop(50%,#000000), color-stop(51%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #000000 0%,#000000 0%,#000000 50%,#ffffff 51%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #000000 0%,#000000 0%,#000000 50%,#ffffff 51%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #000000 0%,#000000 0%,#000000 50%,#ffffff 51%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #000000 0%,#000000 0%,#000000 50%,#ffffff 51%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+/*.grow {
+	display: inline-block;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.grow:hover, .grow:focus, .grow:active, .grow.highlighted {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	position: relative;
+	z-index: 990;
+}*/
+
+@import "team_vis.scss";
+@import "share_btn_and_overlay.scss";
+
+@media only screen and (min-width: 600px) {
+
+	@import "desktop.scss";
+
+}
+
+@media only screen and (max-width: 546px) {
+
+	.main {
+		.team li.player {
+			width: 8.7%;
+			strong {
+				left: 5%;
+				bottom: 20%;
+				width: 100%;
+				line-height: 28px;
+				height: 27px;
+				top: 15%;
+				font-size: 16px;
+				text-align: center;
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width: 430px) {
+
+	.main {
+		.team li.player {
+			strong {
+				top: 6%;
+			}
+			span {
+				&.frame {
+					.position-number {
+						left: 4%;
+						bottom: 5%;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (min-width: 618px) and (max-width: 770px) {
+
+	.main .top-menu .buttons-wrapper input {
+		width: 40%;
+	}
+
+}
